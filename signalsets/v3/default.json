@@ -1,4 +1,35 @@
 { "commands": [
-
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 0.1,
+  "signals": [
+    {"id": "VELOSTER_N_TPMS_PRESS_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5, "unit": "psi" }, "name": "TPMS Pressure Front Left",     "suggestedMetric": "tirePressureFrontLeft"},
+    {"id": "VELOSTER_N_TPMS_TEMP_FL",  "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 100, "min": -50,           "unit": "C"   }, "name": "TPMS Temperature Front Left",  "suggestedMetric": "tireTemperatureFrontLeft"},
+    {"id": "VELOSTER_N_TPMS_PRESS_FR", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51,              "div": 5, "unit": "psi" }, "name": "TPMS Pressure Front Right",    "suggestedMetric": "tirePressureFrontRight"},
+    {"id": "VELOSTER_N_TPMS_TEMP_FR",  "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 100, "min": -50,           "unit": "C"   }, "name": "TPMS Temperature Front Right", "suggestedMetric": "tireTemperatureFrontRight"},
+    {"id": "VELOSTER_N_TPMS_PRESS_RR", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51,              "div": 5, "unit": "psi" }, "name": "TPMS Pressure Rear Right",     "suggestedMetric": "tirePressureRearRight"},
+    {"id": "VELOSTER_N_TPMS_TEMP_RR",  "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 100, "min": -50,           "unit": "C"   }, "name": "TPMS Temperature Rear Right",  "suggestedMetric": "tireTemperatureRearRight"},
+    {"id": "VELOSTER_N_TPMS_PRESS_RL", "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51,              "div": 5, "unit": "psi" }, "name": "TPMS Pressure Rear Left",      "suggestedMetric": "tirePressureRearLeft"},
+    {"id": "VELOSTER_N_TPMS_TEMP_RL",  "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 100, "min": -50,           "unit": "C"   }, "name": "TPMS Temperature Rear Left",   "suggestedMetric": "tireTemperatureRearLeft"}
+  ]},
+{ "hdr": "7C6", "rax": "7CE", "cmd": {"22": "B002"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_N_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 255,                     "unit": "liters"     }, "name": "Fuel level (volume)", "suggestedMetric": "fuelLevel"},
+    {"id": "VELOSTER_N_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,         "div": 12.8, "unit": "V"          }, "name": "Cluster Voltage",     "suggestedMetric": "moduleVoltage"},
+    {"id": "VELOSTER_N_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,                "unit": "kilometers" }, "name": "Odometer (Metric)",   "suggestedMetric": "odometer"},
+    {"id": "VELOSTER_N_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 4294967295,              "unit": "miles"      }, "name": "Odometer (Imperial)", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7D1", "rax": "7D9", "cmd": {"22": "0104"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_N_ABS_SPEED",      "path": "Chassis", "fmt": {"bix": 48,  "len": 8,  "max": 220,              "unit": "Km/h" }, "name": "ABS Speed (Avg)",       "suggestedMetric": "vehicleSpeed"},
+    {"id": "VELOSTER_N_ABS_SPEED_FL",   "path": "Chassis", "fmt": {"bix": 88,  "len": 8,  "max": 220,              "unit": "Km/h" }, "name": "ABS Speed Front Left",  "suggestedMetric": "wheelSpeedFrontLeft"},
+    {"id": "VELOSTER_N_ABS_SPEED_FR",   "path": "Chassis", "fmt": {"bix": 96,  "len": 8,  "max": 220,              "unit": "Km/h" }, "name": "ABS Speed Front Right", "suggestedMetric": "wheelSpeedFrontRight"},
+    {"id": "VELOSTER_N_ABS_SPEED_RR",   "path": "Chassis", "fmt": {"bix": 104, "len": 8,  "max": 220,              "unit": "Km/h" }, "name": "ABS Speed Rear Right",  "suggestedMetric": "wheelSpeedRearRight"},
+    {"id": "VELOSTER_N_ABS_SPEED_RL",   "path": "Chassis", "fmt": {"bix": 112, "len": 8,  "max": 220,              "unit": "Km/h" }, "name": "ABS Speed Rear Left",   "suggestedMetric": "wheelSpeedRearLeft"},
+    {"id": "VELOSTER_N_BRAKE_PRESSURE", "path": "Chassis", "fmt": {"bix": 256, "len": 16, "max": 100, "div": 86.7, "unit": "%"    }, "name": "Brake Pressure",        "suggestedMetric": "brakePressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_N_INTAKE_TEMP", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 200, "min": -40, "div": 1.3333, "unit": "C" }, "name": "Intake Air Temperature", "suggestedMetric": "intakeAirTemperature"},
+    {"id": "VELOSTER_N_OIL_TEMP",    "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 200, "min": -40, "div": 1.3333, "unit": "C" }, "name": "Engine Oil Temperature", "suggestedMetric": "engineOilTemperature"}
+  ]}
 ]
 }

@@ -4,16 +4,16 @@
       "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 0.1,
       "signals": [
         {"id": "VELOSTER_N_TPMS_PRESS_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "TPMS Pressure Front Left", "suggestedMetric": "frontLeftTirePressure"},
-        {"id": "VELOSTER_N_TPMS_TEMP_FL",  "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 100, "min": -50, "unit": "celsius" }, "name": "TPMS Temperature Front Left"},
+        {"id": "VELOSTER_N_TPMS_TEMP_FL",  "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 100, "min": -50, "unit": "celsius" }, "name": "TPMS Temperature Front Left"}, 
         {"id": "VELOSTER_N_TPMS_ALERT_FL", "path": "Tires", "fmt": {"bix": 56,  "len": 8 }, "name": "TPMS Alert Front Left"},
         {"id": "VELOSTER_N_TPMS_PRESS_FR", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "TPMS Pressure Front Right", "suggestedMetric": "frontRightTirePressure"},
-        {"id": "VELOSTER_N_TPMS_TEMP_FR",  "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 100, "min": -50, "unit": "celsius" }, "name": "TPMS Temperature Front Right"},
+        {"id": "VELOSTER_N_TPMS_TEMP_FR",  "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 100, "min": -50, "unit": "celsius" }, "name": "TPMS Temperature Front Right"}, 
         {"id": "VELOSTER_N_TPMS_ALERT_FR", "path": "Tires", "fmt": {"bix": 96,  "len": 8 }, "name": "TPMS Alert Front Right"},
         {"id": "VELOSTER_N_TPMS_PRESS_RR", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "TPMS Pressure Rear Right", "suggestedMetric": "rearRightTirePressure"},
-        {"id": "VELOSTER_N_TPMS_TEMP_RR",  "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 100, "min": -50, "unit": "celsius" }, "name": "TPMS Temperature Rear Right"},
+        {"id": "VELOSTER_N_TPMS_TEMP_RR",  "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 100, "min": -50, "unit": "celsius" }, "name": "TPMS Temperature Rear Right"}, 
         {"id": "VELOSTER_N_TPMS_ALERT_RR", "path": "Tires", "fmt": {"bix": 136, "len": 8 }, "name": "TPMS Alert Rear Right"},
         {"id": "VELOSTER_N_TPMS_PRESS_RL", "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "TPMS Pressure Rear Left", "suggestedMetric": "rearLeftTirePressure"},
-        {"id": "VELOSTER_N_TPMS_TEMP_RL",  "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 100, "min": -50, "unit": "celsius" }, "name": "TPMS Temperature Rear Left"},
+        {"id": "VELOSTER_N_TPMS_TEMP_RL",  "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 100, "min": -50, "unit": "celsius" }, "name": "TPMS Temperature Rear Left"}, 
         {"id": "VELOSTER_N_TPMS_ALERT_RL", "path": "Tires", "fmt": {"bix": 176, "len": 8 }, "name": "TPMS Alert Rear Left"}
       ]
     },
@@ -35,15 +35,15 @@
         {"id": "VELOSTER_N_ABS_SPEED_RR", "path": "Chassis", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "ABS Speed Rear Right"},
         {"id": "VELOSTER_N_ABS_SPEED_RL", "path": "Chassis", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "ABS Speed Rear Left"},
         {"id": "VELOSTER_N_ABS_TC_SWITCH", "path": "Chassis", "fmt": {"bix": 150, "len": 1, "unit": "noyes" }, "name": "ABS Traction Control Switch (Raw)"},
-        {"id": "VELOSTER_N_STEERING_ANGLE", "path": "Chassis", "fmt": {"bix": 200, "len": 16, "max": 3276.7, "div": 10, "unit": "degrees" }, "name": "Steering Wheel Angle"},
-        {"id": "VELOSTER_N_BRAKE_PRESSURE", "path": "Chassis", "fmt": {"bix": 256, "len": 16, "max": 100, "div": 86.7, "unit": "percent" }, "name": "Brake Pressure"}
+        {"id": "VELOSTER_N_STEERING_ANGLE", "path": "Chassis", "fmt": {"bix": 200, "len": 16, "max": 3276.7, "signed": true, "div": 10, "unit": "degrees" }, "name": "Steering Wheel Angle"}, 
+        {"id": "VELOSTER_N_BRAKE_PRESSURE", "path": "Chassis", "fmt": {"bix": 256, "len": 16, "max": 100, "div": 86.7, "unit": "percent", "signed": true }, "name": "Brake Pressure"} 
       ]
     },
     {
       "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 1,
       "signals": [
-        {"id": "VELOSTER_N_INTAKE_TEMP", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 207, "div": 1.3333, "unit": "celsius" }, "name": "Intake Air Temperature"},
-        {"id": "VELOSTER_N_OIL_TEMP", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 207, "div": 1.3333, "unit": "celsius" }, "name": "Engine Oil Temperature"}
+        {"id": "VELOSTER_N_INTAKE_TEMP", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 207, "add": -48, "div": 1.3333, "unit": "celsius" }, "name": "Intake Air Temperature"}, 
+        {"id": "VELOSTER_N_OIL_TEMP", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 207, "add": -48, "div": 1.3333, "unit": "celsius" }, "name": "Engine Oil Temperature"} 
       ]
     },
     {
@@ -58,14 +58,14 @@
     {
       "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 2,
       "signals": [
-        {"id": "VELOSTER_N_KNOCK_RETARD_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 1"},
-        {"id": "VELOSTER_N_KNOCK_RETARD_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 2"},
-        {"id": "VELOSTER_N_KNOCK_RETARD_3", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 3"},
-        {"id": "VELOSTER_N_KNOCK_RETARD_4", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 4"},
-        {"id": "VELOSTER_N_KNOCK_LEARN_1", "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 1"},
-        {"id": "VELOSTER_N_KNOCK_LEARN_2", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 2"},
-        {"id": "VELOSTER_N_KNOCK_LEARN_3", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 3"},
-        {"id": "VELOSTER_N_KNOCK_LEARN_4", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 4"}
+        {"id": "VELOSTER_N_KNOCK_RETARD_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 1"}, 
+        {"id": "VELOSTER_N_KNOCK_RETARD_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 2"}, 
+        {"id": "VELOSTER_N_KNOCK_RETARD_3", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 3"}, 
+        {"id": "VELOSTER_N_KNOCK_RETARD_4", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 4"}, 
+        {"id": "VELOSTER_N_KNOCK_LEARN_1", "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 1"}, 
+        {"id": "VELOSTER_N_KNOCK_LEARN_2", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 2"}, 
+        {"id": "VELOSTER_N_KNOCK_LEARN_3", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 3"}, 
+        {"id": "VELOSTER_N_KNOCK_LEARN_4", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 4"} 
       ]
     },
     {
@@ -90,7 +90,7 @@
     {
       "hdr": "7DF", "rax": "7E8", "cmd": {"01": "05"}, "freq": 1,
       "signals": [
-        {"id": "VELOSTER_N_SAE_COOLANT_TEMP", "path": "Engine", "fmt": {"bix": 0, "len": 8, "max": 215, "unit": "celsius" }, "name": "SAE Coolant Temp"}
+        {"id": "VELOSTER_N_SAE_COOLANT_TEMP", "path": "Engine", "fmt": {"bix": 0, "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Coolant Temp"} 
       ]
     },
     {
@@ -108,7 +108,7 @@
     {
       "hdr": "7DF", "rax": "7E8", "cmd": {"01": "3C"}, "freq": 0.2,
       "signals": [
-        {"id": "VELOSTER_N_SAE_CAT_TEMP_B1S1", "path": "Engine", "fmt": {"bix": 0, "len": 16, "max": 6513.5, "div": 10, "unit": "celsius" }, "name": "SAE Catalyst Temp B1S1"}
+        {"id": "VELOSTER_N_SAE_CAT_TEMP_B1S1", "path": "Engine", "fmt": {"bix": 0, "len": 16, "max": 6513.5, "div": 10, "add": -40, "unit": "celsius" }, "name": "SAE Catalyst Temp B1S1"} 
       ]
     },
     {
@@ -120,7 +120,7 @@
     {
       "hdr": "7DF", "rax": "7E8", "cmd": {"01": "46"}, "freq": 0.1,
       "signals": [
-        {"id": "VELOSTER_N_SAE_AMBIENT_TEMP", "path": "Climate", "fmt": {"bix": 0, "len": 8, "max": 215, "unit": "celsius" }, "name": "SAE Ambient Air Temp"}
+        {"id": "VELOSTER_N_SAE_AMBIENT_TEMP", "path": "Climate", "fmt": {"bix": 0, "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Ambient Air Temp"} 
       ]
     }
   ]

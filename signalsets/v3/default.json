@@ -1,127 +1,98 @@
-{
-  "commands": [
-    {
-      "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 0.1,
-      "signals": [
-        {"id": "VELOSTER_N_TPMS_PRESS_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "TPMS Pressure Front Left", "suggestedMetric": "frontLeftTirePressure"},
-        {"id": "VELOSTER_N_TPMS_TEMP_FL",  "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 100, "min": -50, "unit": "celsius" }, "name": "TPMS Temperature Front Left"}, 
-        {"id": "VELOSTER_N_TPMS_ALERT_FL", "path": "Tires", "fmt": {"bix": 56,  "len": 8 }, "name": "TPMS Alert Front Left"},
-        {"id": "VELOSTER_N_TPMS_PRESS_FR", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "TPMS Pressure Front Right", "suggestedMetric": "frontRightTirePressure"},
-        {"id": "VELOSTER_N_TPMS_TEMP_FR",  "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 100, "min": -50, "unit": "celsius" }, "name": "TPMS Temperature Front Right"}, 
-        {"id": "VELOSTER_N_TPMS_ALERT_FR", "path": "Tires", "fmt": {"bix": 96,  "len": 8 }, "name": "TPMS Alert Front Right"},
-        {"id": "VELOSTER_N_TPMS_PRESS_RR", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "TPMS Pressure Rear Right", "suggestedMetric": "rearRightTirePressure"},
-        {"id": "VELOSTER_N_TPMS_TEMP_RR",  "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 100, "min": -50, "unit": "celsius" }, "name": "TPMS Temperature Rear Right"}, 
-        {"id": "VELOSTER_N_TPMS_ALERT_RR", "path": "Tires", "fmt": {"bix": 136, "len": 8 }, "name": "TPMS Alert Rear Right"},
-        {"id": "VELOSTER_N_TPMS_PRESS_RL", "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51, "div": 5, "unit": "psi" }, "name": "TPMS Pressure Rear Left", "suggestedMetric": "rearLeftTirePressure"},
-        {"id": "VELOSTER_N_TPMS_TEMP_RL",  "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 100, "min": -50, "unit": "celsius" }, "name": "TPMS Temperature Rear Left"}, 
-        {"id": "VELOSTER_N_TPMS_ALERT_RL", "path": "Tires", "fmt": {"bix": 176, "len": 8 }, "name": "TPMS Alert Rear Left"}
-      ]
-    },
-    {
-      "hdr": "7C6", "rax": "7CE", "cmd": {"22": "B002"}, "freq": 1,
-      "signals": [
-        {"id": "VELOSTER_N_FLI_VOL", "path": "Fuel", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "liters" }, "name": "Fuel level (volume)"},
-        {"id": "VELOSTER_N_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8, "max": 18, "div": 12.8, "unit": "volts" }, "name": "Cluster Voltage"},
-        {"id": "VELOSTER_N_ODO_KM", "path": "Trips", "fmt": {"bix": 48, "len": 24, "max": 4294967295, "unit": "kilometers" }, "name": "Odometer (Metric)", "suggestedMetric": "odometer"},
-        {"id": "VELOSTER_N_ODO_MI", "path": "Trips", "fmt": {"bix": 72, "len": 24, "max": 4294967295, "unit": "miles" }, "name": "Odometer (Imperial)", "suggestedMetric": "odometer"}
-      ]
-    },
-    {
-      "hdr": "7D1", "rax": "7D9", "cmd": {"22": "0104"}, "freq": 1,
-      "signals": [
-        {"id": "VELOSTER_N_ABS_SPEED", "path": "Chassis", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "ABS Speed (Avg)"},
-        {"id": "VELOSTER_N_ABS_SPEED_FL", "path": "Chassis", "fmt": {"bix": 88, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "ABS Speed Front Left"},
-        {"id": "VELOSTER_N_ABS_SPEED_FR", "path": "Chassis", "fmt": {"bix": 96, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "ABS Speed Front Right"},
-        {"id": "VELOSTER_N_ABS_SPEED_RR", "path": "Chassis", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "ABS Speed Rear Right"},
-        {"id": "VELOSTER_N_ABS_SPEED_RL", "path": "Chassis", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "ABS Speed Rear Left"},
-        {"id": "VELOSTER_N_ABS_TC_SWITCH", "path": "Chassis", "fmt": {"bix": 150, "len": 1, "unit": "noyes" }, "name": "ABS Traction Control Switch (Raw)"},
-        {"id": "VELOSTER_N_STEERING_ANGLE", "path": "Chassis", "fmt": {"bix": 200, "len": 16, "max": 3276.7, "signed": true, "div": 10, "unit": "degrees" }, "name": "Steering Wheel Angle"}, 
-        {"id": "VELOSTER_N_BRAKE_PRESSURE", "path": "Chassis", "fmt": {"bix": 256, "len": 16, "max": 100, "div": 86.7, "unit": "percent", "signed": true }, "name": "Brake Pressure"} 
-      ]
-    },
-    {
-      "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 1,
-      "signals": [
-        {"id": "VELOSTER_N_INTAKE_TEMP", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 207, "add": -48, "div": 1.3333, "unit": "celsius" }, "name": "Intake Air Temperature"}, 
-        {"id": "VELOSTER_N_OIL_TEMP", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 207, "add": -48, "div": 1.3333, "unit": "celsius" }, "name": "Engine Oil Temperature"} 
-      ]
-    },
-    {
-      "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5,
-      "signals": [
-        {"id": "VELOSTER_N_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 1"},
-        {"id": "VELOSTER_N_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 2"},
-        {"id": "VELOSTER_N_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 3"},
-        {"id": "VELOSTER_N_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 4"}
-      ]
-    },
-    {
-      "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 2,
-      "signals": [
-        {"id": "VELOSTER_N_KNOCK_RETARD_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 1"}, 
-        {"id": "VELOSTER_N_KNOCK_RETARD_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 2"}, 
-        {"id": "VELOSTER_N_KNOCK_RETARD_3", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 3"}, 
-        {"id": "VELOSTER_N_KNOCK_RETARD_4", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 4"}, 
-        {"id": "VELOSTER_N_KNOCK_LEARN_1", "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 1"}, 
-        {"id": "VELOSTER_N_KNOCK_LEARN_2", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 2"}, 
-        {"id": "VELOSTER_N_KNOCK_LEARN_3", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 3"}, 
-        {"id": "VELOSTER_N_KNOCK_LEARN_4", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 50, "signed": true, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 4"} 
-      ]
-    },
-    {
-      "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 0.5,
-      "signals": [
-        {"id": "VELOSTER_N_DOOR_RL_OPEN", "path": "Body", "fmt": {"bix": 32, "len": 1, "unit": "noyes" }, "name": "Door Rear Left Open"},
-        {"id": "VELOSTER_N_DOOR_RR_OPEN", "path": "Body", "fmt": {"bix": 34, "len": 1, "unit": "noyes" }, "name": "Door Rear Right Open"},
-        {"id": "VELOSTER_N_HANDBRAKE", "path": "Chassis", "fmt": {"bix": 35, "len": 1, "unit": "noyes" }, "name": "Handbrake Switch"},
-        {"id": "VELOSTER_N_DOOR_FR_OPEN", "path": "Body", "fmt": {"bix": 36, "len": 1, "unit": "noyes" }, "name": "Door Front Right Open"},
-        {"id": "VELOSTER_N_DOOR_FL_OPEN", "path": "Body", "fmt": {"bix": 37, "len": 1, "unit": "noyes" }, "name": "Door Front Left Open"},
-        {"id": "VELOSTER_N_DOOR_TRUNK_OPEN", "path": "Body", "fmt": {"bix": 39, "len": 1, "unit": "noyes" }, "name": "Door Trunk Open"},
-        {"id": "VELOSTER_N_BELT_DRIVER", "path": "Body", "fmt": {"bix": 41, "len": 1, "unit": "noyes" }, "name": "Seatbelt Driver"},
-        {"id": "VELOSTER_N_BELT_PASSENGER", "path": "Body", "fmt": {"bix": 42, "len": 1, "unit": "noyes" }, "name": "Seatbelt Passenger"}
-      ]
-    },
-    {
-      "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 0.5,
-      "signals": [
-        {"id": "VELOSTER_N_REVERSE_GEAR", "path": "Transmission", "fmt": {"bix": 36, "len": 1, "unit": "noyes" }, "name": "Reverse Gear Selected"}
-      ]
-    },
-    {
-      "hdr": "7DF", "rax": "7E8", "cmd": {"01": "05"}, "freq": 1,
-      "signals": [
-        {"id": "VELOSTER_N_SAE_COOLANT_TEMP", "path": "Engine", "fmt": {"bix": 0, "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Coolant Temp"} 
-      ]
-    },
-    {
-      "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0C"}, "freq": 10,
-      "signals": [
-        {"id": "VELOSTER_N_SAE_RPM", "path": "Engine", "fmt": {"bix": 0, "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "SAE RPM"}
-      ]
-    },
-    {
-      "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0D"}, "freq": 10,
-      "signals": [
-        {"id": "VELOSTER_N_SAE_SPEED", "path": "Chassis", "fmt": {"bix": 0, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "SAE Speed"}
-      ]
-    },
-    {
-      "hdr": "7DF", "rax": "7E8", "cmd": {"01": "3C"}, "freq": 0.2,
-      "signals": [
-        {"id": "VELOSTER_N_SAE_CAT_TEMP_B1S1", "path": "Engine", "fmt": {"bix": 0, "len": 16, "max": 6513.5, "div": 10, "add": -40, "unit": "celsius" }, "name": "SAE Catalyst Temp B1S1"} 
-      ]
-    },
-    {
-      "hdr": "7DF", "rax": "7E8", "cmd": {"01": "42"}, "freq": 0.2,
-      "signals": [
-        {"id": "VELOSTER_N_SAE_MODULE_VOLTAGE", "path": "Electrical", "fmt": {"bix": 0, "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "SAE Control Module Voltage"}
-      ]
-    },
-    {
-      "hdr": "7DF", "rax": "7E8", "cmd": {"01": "46"}, "freq": 0.1,
-      "signals": [
-        {"id": "VELOSTER_N_SAE_AMBIENT_TEMP", "path": "Climate", "fmt": {"bix": 0, "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Ambient Air Temp"} 
-      ]
-    }
-  ]
+{ "commands": [
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 0.5,
+  "signals": [
+    {"id": "VELOSTER_N_DOOR_RL_OPEN",    "path": "Body",    "fmt": {"bix": 32, "len": 1, "max": 1, "unit": "noyes" }, "name": "Door Rear Left Open"},
+    {"id": "VELOSTER_N_DOOR_RR_OPEN",    "path": "Body",    "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "noyes" }, "name": "Door Rear Right Open"},
+    {"id": "VELOSTER_N_HANDBRAKE",       "path": "Chassis", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes" }, "name": "Handbrake Switch"},
+    {"id": "VELOSTER_N_DOOR_FR_OPEN",    "path": "Body",    "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "noyes" }, "name": "Door Front Right Open"},
+    {"id": "VELOSTER_N_DOOR_FL_OPEN",    "path": "Body",    "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "noyes" }, "name": "Door Front Left Open"},
+    {"id": "VELOSTER_N_DOOR_TRUNK_OPEN", "path": "Body",    "fmt": {"bix": 39, "len": 1, "max": 1, "unit": "noyes" }, "name": "Door Trunk Open"},
+    {"id": "VELOSTER_N_BELT_DRIVER",     "path": "Body",    "fmt": {"bix": 41, "len": 1, "max": 1, "unit": "noyes" }, "name": "Seatbelt Driver"},
+    {"id": "VELOSTER_N_BELT_PASSENGER",  "path": "Body",    "fmt": {"bix": 42, "len": 1, "max": 1, "unit": "noyes" }, "name": "Seatbelt Passenger"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 0.5,
+  "signals": [
+    {"id": "VELOSTER_N_REVERSE_GEAR", "path": "Transmission", "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "noyes" }, "name": "Reverse Gear Selected"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 0.1,
+  "signals": [
+    {"id": "VELOSTER_N_TPMS_PRESS_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5, "unit": "psi"     }, "name": "TPMS Pressure Front Left",     "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "VELOSTER_N_TPMS_TEMP_FL",  "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 100, "min": -50,           "unit": "celsius" }, "name": "TPMS Temperature Front Left"},
+    {"id": "VELOSTER_N_TPMS_ALERT_FL", "path": "Tires", "fmt": {"bix": 56,  "len": 8, "max": 1,                         "unit": "noyes"   }, "name": "TPMS Alert Front Left"},
+    {"id": "VELOSTER_N_TPMS_PRESS_FR", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51,              "div": 5, "unit": "psi"     }, "name": "TPMS Pressure Front Right",    "suggestedMetric": "frontRightTirePressure"},
+    {"id": "VELOSTER_N_TPMS_TEMP_FR",  "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 100, "min": -50,           "unit": "celsius" }, "name": "TPMS Temperature Front Right"},
+    {"id": "VELOSTER_N_TPMS_ALERT_FR", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 1,                         "unit": "noyes"   }, "name": "TPMS Alert Front Right"},
+    {"id": "VELOSTER_N_TPMS_PRESS_RR", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51,              "div": 5, "unit": "psi"     }, "name": "TPMS Pressure Rear Right",     "suggestedMetric": "rearRightTirePressure"},
+    {"id": "VELOSTER_N_TPMS_TEMP_RR",  "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 100, "min": -50,           "unit": "celsius" }, "name": "TPMS Temperature Rear Right"},
+    {"id": "VELOSTER_N_TPMS_ALERT_RR", "path": "Tires", "fmt": {"bix": 136, "len": 8, "max": 1,                         "unit": "noyes"   }, "name": "TPMS Alert Rear Right"},
+    {"id": "VELOSTER_N_TPMS_PRESS_RL", "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51,              "div": 5, "unit": "psi"     }, "name": "TPMS Pressure Rear Left",      "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "VELOSTER_N_TPMS_TEMP_RL",  "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 100, "min": -50,           "unit": "celsius" }, "name": "TPMS Temperature Rear Left"},
+    {"id": "VELOSTER_N_TPMS_ALERT_RL", "path": "Tires", "fmt": {"bix": 176, "len": 8, "max": 1,                         "unit": "noyes"   }, "name": "TPMS Alert Rear Left"}
+  ]},
+{ "hdr": "7C6", "rax": "7CE", "cmd": {"22": "B002"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_N_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 255,                     "unit": "liters"     }, "name": "Fuel level (volume)"},
+    {"id": "VELOSTER_N_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,         "div": 12.8, "unit": "volts"      }, "name": "Cluster Voltage"},
+    {"id": "VELOSTER_N_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 4294967295,              "unit": "kilometers" }, "name": "Odometer (Metric)",   "suggestedMetric": "odometer"},
+    {"id": "VELOSTER_N_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 4294967295,              "unit": "miles"      }, "name": "Odometer (Imperial)", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7D1", "rax": "7D9", "cmd": {"22": "0104"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_N_ABS_SPEED",      "path": "Chassis", "fmt": {"bix": 48,  "len": 8,  "max": 255,                 "unit": "kilometersPerHour" }, "name": "ABS Speed (Avg)"},
+    {"id": "VELOSTER_N_ABS_SPEED_FL",   "path": "Chassis", "fmt": {"bix": 88,  "len": 8,  "max": 255,                 "unit": "kilometersPerHour" }, "name": "ABS Speed Front Left"},
+    {"id": "VELOSTER_N_ABS_SPEED_FR",   "path": "Chassis", "fmt": {"bix": 96,  "len": 8,  "max": 255,                 "unit": "kilometersPerHour" }, "name": "ABS Speed Front Right"},
+    {"id": "VELOSTER_N_ABS_SPEED_RR",   "path": "Chassis", "fmt": {"bix": 104, "len": 8,  "max": 255,                 "unit": "kilometersPerHour" }, "name": "ABS Speed Rear Right"},
+    {"id": "VELOSTER_N_ABS_SPEED_RL",   "path": "Chassis", "fmt": {"bix": 112, "len": 8,  "max": 255,                 "unit": "kilometersPerHour" }, "name": "ABS Speed Rear Left"},
+    {"id": "VELOSTER_N_ABS_TC_SWITCH",  "path": "Chassis", "fmt": {"bix": 150, "len": 1,  "max": 1,                   "unit": "noyes"             }, "name": "ABS Traction Control Switch (Raw)"},
+    {"id": "VELOSTER_N_STEERING_ANGLE", "path": "Chassis", "fmt": {"bix": 200, "len": 16, "max": 3276.7, "div": 10,   "unit": "degrees"           }, "name": "Steering Wheel Angle"},
+    {"id": "VELOSTER_N_BRAKE_PRESSURE", "path": "Chassis", "fmt": {"bix": 256, "len": 16, "max": 100,    "div": 86.7, "unit": "percent"           }, "name": "Brake Pressure"}
+  ]},
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "05"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_N_SAE_COOLANT_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Coolant Temp"}
+  ]},
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0C"}, "freq": 10,
+  "signals": [
+    {"id": "VELOSTER_N_SAE_RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "SAE RPM"}
+  ]},
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0D"}, "freq": 10,
+  "signals": [
+    {"id": "VELOSTER_N_SAE_SPEED", "path": "Chassis", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "SAE Speed"}
+  ]},
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "3C"}, "freq": 0.2,
+  "signals": [
+    {"id": "VELOSTER_N_SAE_CAT_TEMP_B1S1", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "div": 10, "add": -40, "unit": "celsius" }, "name": "SAE Catalyst Temp B1S1"}
+  ]},
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "42"}, "freq": 0.2,
+  "signals": [
+    {"id": "VELOSTER_N_SAE_MODULE_VOLTAGE", "path": "Electrical", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "SAE Control Module Voltage"}
+  ]},
+{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "46"}, "freq": 0.1,
+  "signals": [
+    {"id": "VELOSTER_N_SAE_AMBIENT_TEMP", "path": "Climate", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Ambient Air Temp"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_N_INTAKE_TEMP", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 207, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Intake Air Temperature"},
+    {"id": "VELOSTER_N_OIL_TEMP",    "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 207, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Engine Oil Temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5,
+  "signals": [
+    {"id": "VELOSTER_N_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 1"},
+    {"id": "VELOSTER_N_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 2"},
+    {"id": "VELOSTER_N_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 3"},
+    {"id": "VELOSTER_N_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 2,
+  "signals": [
+    {"id": "VELOSTER_N_KNOCK_RETARD_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 1"},
+    {"id": "VELOSTER_N_KNOCK_RETARD_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 2"},
+    {"id": "VELOSTER_N_KNOCK_RETARD_3", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 3"},
+    {"id": "VELOSTER_N_KNOCK_RETARD_4", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Retard Cyl 4"},
+    {"id": "VELOSTER_N_KNOCK_LEARN_1",  "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 1"},
+    {"id": "VELOSTER_N_KNOCK_LEARN_2",  "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 2"},
+    {"id": "VELOSTER_N_KNOCK_LEARN_3",  "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 3"},
+    {"id": "VELOSTER_N_KNOCK_LEARN_4",  "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 50, "div": 5, "unit": "degrees" }, "name": "Knock Learn Cyl 4"}
+  ]}
+]
 }

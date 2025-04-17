@@ -2,13 +2,13 @@
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 0.5,
   "signals": [
     {"id": "VELOSTER_N_DOOR_RL_OPEN",    "path": "Body",    "fmt": {"bix": 32, "len": 1, "max": 1, "unit": "noyes" }, "name": "Door Rear Left Open"},
-    {"id": "VELOSTER_N_DOOR_RR_OPEN",    "path": "Body",    "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "noyes" }, "name": "Door Rear Right Open"},
+    {"id": "VELOSTER_N_DOOR_RR_OPEN",    "path": "Body",    "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "noyes" }, "name": "Door Rear Right Open"},
     {"id": "VELOSTER_N_HANDBRAKE",       "path": "Chassis", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes" }, "name": "Handbrake Switch"},
     {"id": "VELOSTER_N_DOOR_FR_OPEN",    "path": "Body",    "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "noyes" }, "name": "Door Front Right Open"},
-    {"id": "VELOSTER_N_DOOR_FL_OPEN",    "path": "Body",    "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "noyes" }, "name": "Door Front Left Open"},
+    {"id": "VELOSTER_N_DOOR_FL_OPEN",    "path": "Body",    "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "noyes" }, "name": "Door Front Left Open"},
     {"id": "VELOSTER_N_DOOR_TRUNK_OPEN", "path": "Body",    "fmt": {"bix": 39, "len": 1, "max": 1, "unit": "noyes" }, "name": "Door Trunk Open"},
     {"id": "VELOSTER_N_BELT_DRIVER",     "path": "Body",    "fmt": {"bix": 41, "len": 1, "max": 1, "unit": "noyes" }, "name": "Seatbelt Driver"},
-    {"id": "VELOSTER_N_BELT_PASSENGER",  "path": "Body",    "fmt": {"bix": 42, "len": 1, "max": 1, "unit": "noyes" }, "name": "Seatbelt Passenger"}
+    {"id": "VELOSTER_N_BELT_PASSENGER",  "path": "Body",    "fmt": {"bix": 40, "len": 1, "max": 1, "unit": "noyes" }, "name": "Seatbelt Passenger"}
   ]},
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 0.5,
   "signals": [

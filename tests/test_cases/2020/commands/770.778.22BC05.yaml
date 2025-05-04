@@ -1,0 +1,14 @@
+command_id: 770.778.22BC05
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    778100B62BC053F1320
+    778210000800000AAAA
+  expected_values:
+    VELOSTER_HAZARD_SW: 0
+- response: |-
+    778100B62BC053F1320
+    778210050800000AAAA
+  expected_values:
+    VELOSTER_HAZARD_SW: 80

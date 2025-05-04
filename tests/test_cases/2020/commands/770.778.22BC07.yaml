@@ -1,0 +1,9 @@
+command_id: 770.778.22BC07
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    778100B62BC0708480B
+    778210000101000AAAA
+  expected_values:
+    VELOSTER_DEFOG_LIGHT: 1

@@ -1,0 +1,61 @@
+command_id: 7DF.7E8.0134
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7E80641347BA77FB9
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99567
+- response: 7E80641347BB77FBA
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99573
+- response: 7E80641347C177FBF
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99603
+- response: 7E80641347C577FC2
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99622
+- response: 7E80641347C877FC4
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99634
+- response: 7E80641347C8F7FC5
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.9964
+- response: 7E80641347C9F7FC5
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.9964
+- response: 7E80641347CB77FC7
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99652
+- response: 7E80641347CE77FC9
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99664
+- response: 7E80641347CFF7FCA
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.9967
+- response: 7E80641347D177FCB
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99677
+- response: 7E80641347D2F7FCC
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99683
+- response: 7E80641347D3F7FCD
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99689
+- response: 7E80641347DAF7FD2
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99719
+- response: 7E80641347DC77FD3
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99725
+- response: 7E80641347E5F7FDA
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 1.99768
+- response: 7E8064134FFFF8399
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 2
+- response: 7E8064134FFFF83C4
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 2
+- response: 7E8064134FFFF83C9
+  expected_values:
+    VELOSTER_SAE_LAMBDA_B1S1: 2

@@ -1,0 +1,10 @@
+command_id: 770.778.22BC09
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    778100B62BC09300000
+    778210000000000AAAA
+  expected_values:
+    VELOSTER_HL_HIGH: 0
+    VELOSTER_HL_LOW: 0

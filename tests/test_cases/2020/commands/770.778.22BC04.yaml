@@ -1,0 +1,18 @@
+command_id: 770.778.22BC04
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    778100B62BC04F03764
+    77821E201000443AAAA
+  expected_values:
+    VELOSTER_LOCK_FL: 0
+    VELOSTER_LOCK_FR: 0
+    VELOSTER_REVERSE_GEAR: 0
+- response: |-
+    778100B62BC04F03764
+    77821E20D000443AAAA
+  expected_values:
+    VELOSTER_LOCK_FL: 0
+    VELOSTER_LOCK_FR: 0
+    VELOSTER_REVERSE_GEAR: 1

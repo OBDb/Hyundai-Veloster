@@ -50,4 +50,4 @@ unsupported_commands_by_ecu:
   7D1:
   - 7D1.7D9.220104
   7E0:
-  - 7E0.0162
+  - 7E0.0162:TQ_ACT

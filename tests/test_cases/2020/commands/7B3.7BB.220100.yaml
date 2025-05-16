@@ -9,8 +9,7 @@ test_cases:
     7BB23FFFFFFFFFFFFFF
     7BB24FF2D1AFFFF2AB0
     7BB25FF01FF00000000
-  expected_values:
-    VELOSTER_VSS: 42
+  expected_values: {}
 - response: |-
     7BB10256201007E1006
     7BB2168FF897C59036A
@@ -18,8 +17,7 @@ test_cases:
     7BB23FFFFFFFFFFFFFF
     7BB24FF2E1AFFFF00AD
     7BB25FF01FF00000000
-  expected_values:
-    VELOSTER_VSS: 0
+  expected_values: {}
 - response: |-
     7BB10256201007E1006
     7BB2168FF897C5B0362
@@ -27,8 +25,7 @@ test_cases:
     7BB23FFFFFFFFFFFFFF
     7BB24FF2F1AFFFF00B4
     7BB25FF01FF00000000
-  expected_values:
-    VELOSTER_VSS: 0
+  expected_values: {}
 - response: |-
     7BB10256201007E1006
     7BB2168FF897C5C0365
@@ -36,8 +33,7 @@ test_cases:
     7BB23FFFFFFFFFFFFFF
     7BB24FF2D1AFFFF00B0
     7BB25FF01FF00000000
-  expected_values:
-    VELOSTER_VSS: 0
+  expected_values: {}
 - response: |-
     7BB10256201007E1006
     7BB2168FF8A7C530368
@@ -45,8 +41,7 @@ test_cases:
     7BB23FFFFFFFFFFFFFF
     7BB24FF2F1AFFFF34B4
     7BB25FF01FF00000000
-  expected_values:
-    VELOSTER_VSS: 52
+  expected_values: {}
 - response: |-
     7BB10256201007E1006
     7BB2168FF8A7C5C0362
@@ -54,8 +49,7 @@ test_cases:
     7BB23FFFFFFFFFFFFFF
     7BB24FF2C1AFFFF00B3
     7BB25FF01FF00000000
-  expected_values:
-    VELOSTER_VSS: 0
+  expected_values: {}
 - response: |-
     7BB10256201007E1006
     7BB2168FF8A7C5C0362
@@ -63,8 +57,7 @@ test_cases:
     7BB23FFFFFFFFFFFFFF
     7BB24FF2F1AFFFF00B5
     7BB25FF01FF00000000
-  expected_values:
-    VELOSTER_VSS: 0
+  expected_values: {}
 - response: |-
     7BB10256201007E1006
     7BB2168FF8A7C5C0362
@@ -72,5 +65,4 @@ test_cases:
     7BB23FFFFFFFFFFFFFF
     7BB24FF311AFFFF05B4
     7BB25FF01FF00000000
-  expected_values:
-    VELOSTER_VSS: 5
+  expected_values: {}

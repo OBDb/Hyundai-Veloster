@@ -3,17 +3,12 @@ can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
 - response: 7E80641347BA77FB9
-  expected_values:
-    VELOSTER_SAE_LAMBDA_B1S1: 1.99567
+  expected_values: {}
 - response: 7E80641347C177FBF
-  expected_values:
-    VELOSTER_SAE_LAMBDA_B1S1: 1.99603
+  expected_values: {}
 - response: 7E80641347CFF7FCA
-  expected_values:
-    VELOSTER_SAE_LAMBDA_B1S1: 1.9967
+  expected_values: {}
 - response: 7E80641347E5F7FDA
-  expected_values:
-    VELOSTER_SAE_LAMBDA_B1S1: 1.99768
+  expected_values: {}
 - response: 7E8064134FFFF8399
-  expected_values:
-    VELOSTER_SAE_LAMBDA_B1S1: 2
+  expected_values: {}

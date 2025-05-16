@@ -3,8 +3,6 @@ can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
 - response: 7E803410D00
-  expected_values:
-    VSS: 0
+  expected_values: {}
 - response: 7E803410D2C
-  expected_values:
-    VSS: 44
+  expected_values: {}

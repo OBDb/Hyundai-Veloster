@@ -33,25 +33,25 @@
   ]},
 { "hdr": "7A0", "rax": "7A8", "dbg": true, "cmd": {"22": "C00B"}, "freq": 15,
   "signals": [
-    {"id": "VELOSTER_TPMS_PRESS_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,               "unit": "psi"     }, "name": "TPMS Pressure Front Left",     "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "VELOSTER_TPMS_TEMP_FL",  "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 100, "min": -50,           "sign": true, "unit": "celsius" }, "name": "TPMS Temperature Front Left"},
-    {"id": "VELOSTER_TPMS_ALERT_FL", "path": "Tires", "fmt": {"bix": 56,  "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "TPMS Alert Front Left"},
-    {"id": "VELOSTER_TPMS_PRESS_FR", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51,              "div": 5,               "unit": "psi"     }, "name": "TPMS Pressure Front Right",    "suggestedMetric": "frontRightTirePressure"},
-    {"id": "VELOSTER_TPMS_TEMP_FR",  "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 100, "min": -50,           "sign": true, "unit": "celsius" }, "name": "TPMS Temperature Front Right"},
-    {"id": "VELOSTER_TPMS_ALERT_FR", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "TPMS Alert Front Right"},
-    {"id": "VELOSTER_TPMS_PRESS_RR", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51,              "div": 5,               "unit": "psi"     }, "name": "TPMS Pressure Rear Right",     "suggestedMetric": "rearRightTirePressure"},
-    {"id": "VELOSTER_TPMS_TEMP_RR",  "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 100, "min": -50,           "sign": true, "unit": "celsius" }, "name": "TPMS Temperature Rear Right"},
-    {"id": "VELOSTER_TPMS_ALERT_RR", "path": "Tires", "fmt": {"bix": 136, "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "TPMS Alert Rear Right"},
-    {"id": "VELOSTER_TPMS_PRESS_RL", "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51,              "div": 5,               "unit": "psi"     }, "name": "TPMS Pressure Rear Left",      "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "VELOSTER_TPMS_TEMP_RL",  "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 100, "min": -50,           "sign": true, "unit": "celsius" }, "name": "TPMS Temperature Rear Left"},
-    {"id": "VELOSTER_TPMS_ALERT_RL", "path": "Tires", "fmt": {"bix": 176, "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "TPMS Alert Rear Left"}
+    {"id": "VELOSTER_TPMS_PRESS_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,               "unit": "psi"     }, "name": "Tire pressure front left",     "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "VELOSTER_TPMS_TEMP_FL",  "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 100, "min": -50,           "sign": true, "unit": "celsius" }, "name": "Tire temperature front left"},
+    {"id": "VELOSTER_TPMS_ALERT_FL", "path": "Tires", "fmt": {"bix": 56,  "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "Tire alert front left"},
+    {"id": "VELOSTER_TPMS_PRESS_FR", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51,              "div": 5,               "unit": "psi"     }, "name": "Tire pressure front right",    "suggestedMetric": "frontRightTirePressure"},
+    {"id": "VELOSTER_TPMS_TEMP_FR",  "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 100, "min": -50,           "sign": true, "unit": "celsius" }, "name": "Tire temperature front right"},
+    {"id": "VELOSTER_TPMS_ALERT_FR", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "Tire alert front right"},
+    {"id": "VELOSTER_TPMS_PRESS_RR", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51,              "div": 5,               "unit": "psi"     }, "name": "Tire pressure rear right",     "suggestedMetric": "rearRightTirePressure"},
+    {"id": "VELOSTER_TPMS_TEMP_RR",  "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 100, "min": -50,           "sign": true, "unit": "celsius" }, "name": "Tire temperature rear right"},
+    {"id": "VELOSTER_TPMS_ALERT_RR", "path": "Tires", "fmt": {"bix": 136, "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "Tire alert rear right"},
+    {"id": "VELOSTER_TPMS_PRESS_RL", "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51,              "div": 5,               "unit": "psi"     }, "name": "Tire pressure rear left",      "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "VELOSTER_TPMS_TEMP_RL",  "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 100, "min": -50,           "sign": true, "unit": "celsius" }, "name": "Tire temperature rear left"},
+    {"id": "VELOSTER_TPMS_ALERT_RL", "path": "Tires", "fmt": {"bix": 176, "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "Tire alert rear left"}
   ]},
 { "hdr": "7C6", "rax": "7CE", "cmd": {"22": "B002"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
   "signals": [
-    {"id": "VELOSTER_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 255,                   "unit": "liters"     }, "name": "Fuel level (volume)"},
-    {"id": "VELOSTER_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8, "unit": "volts"      }, "name": "Cluster Voltage"},
-    {"id": "VELOSTER_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,              "unit": "kilometers" }, "name": "Odometer (Metric)",   "suggestedMetric": "odometer"},
-    {"id": "VELOSTER_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,              "unit": "miles"      }, "name": "Odometer (Imperial)", "suggestedMetric": "odometer"}
+    {"id": "VELOSTER_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 255,                   "unit": "liters"     }, "name": "Fuel level"},
+    {"id": "VELOSTER_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8, "unit": "volts"      }, "name": "Cluster voltage"},
+    {"id": "VELOSTER_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,              "unit": "kilometers" }, "name": "Odometer variation 1", "suggestedMetric": "odometer"},
+    {"id": "VELOSTER_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,              "unit": "miles"      }, "name": "Odometer variation 2", "suggestedMetric": "odometer"}
   ]},
 { "hdr": "7D1", "dbg": true, "cmd": {"22": "4000"}, "freq": 1,
   "signals": [
@@ -62,92 +62,47 @@
   ]},
 { "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
   "signals": [
-    {"id": "VELOSTER_BMS_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                "div": 2,                 "unit": "percent"   }, "name": "BMS State Of Charge"},
-    {"id": "VELOSTER_BMS_CHG_PWR",    "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "BMS Available Charge Power"},
-    {"id": "VELOSTER_BMS_DISCHG_PWR", "path": "Battery", "fmt": {"bix": 56,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "BMS Available Discharge Power"},
-    {"id": "VELOSTER_BMS_MIN_TEMP",   "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "BMS Battery Min Temp"},
-    {"id": "VELOSTER_BMS_MOD1_TEMP",  "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "BMS Battery Mod 1 Temp"},
-    {"id": "VELOSTER_BMS_MOD2_TEMP",  "path": "Battery", "fmt": {"bix": 136, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "BMS Battery Mod 2 Temp"},
-    {"id": "VELOSTER_BMS_MOD3_TEMP",  "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "BMS Battery Mod 3 Temp"},
-    {"id": "VELOSTER_BMS_MOD4_TEMP",  "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "BMS Battery Mod 4 Temp"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "05"}, "freq": 5, "dbgfilter": { "from": 2021, "to": 2019 },
-  "signals": [
-    {"id": "VELOSTER_COOLANT_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE coolant temp"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0B"}, "freq": 0.1, "dbgfilter": { "from": 2021, "to": 2019 },
-  "signals": [
-    {"id": "VELOSTER_MAP", "path": "Engine", "fmt": { "len": 8, "max": 127, "min": -128, "sign": true, "unit": "kilopascal" }, "name": "SAE manifold absolute pressure"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0C"}, "freq": 0.1, "dbgfilter": { "from": 2021, "to": 2019 },
-  "signals": [
-    {"id": "VELOSTER_RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "SAE RPM"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "0D"}, "freq": 1, "dbgfilter": { "from": 2021, "to": 2019 },
-  "signals": [
-    {"id": "VELOSTER_SPEED", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "SAE Speed"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "33"}, "freq": 1, "dbgfilter": { "from": 2021, "to": 2019 },
-  "signals": [
-    {"id": "VELOSTER_BARO", "path": "Engine", "fmt": { "len": 8, "max": 127, "min": -128, "sign": true, "unit": "kilopascal" }, "name": "SAE Barometric Pressure"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "34"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
-  "signals": [
-    {"id": "VELOSTER_LAMBDA_B1S1", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 2, "mul": 2, "div": 32768, "unit": "scalar" }, "name": "SAE Lambda B1S1 (Actual)"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "3C"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
-  "signals": [
-    {"id": "VELOSTER_CAT_TEMP_B1S1", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "div": 10, "add": -40, "unit": "celsius" }, "name": "SAE Catalyst Temp B1S1"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "42"}, "freq": 0.2, "dbgfilter": { "from": 2021, "to": 2019 },
-  "signals": [
-    {"id": "VELOSTER_MODULE_VOLTAGE", "path": "Electrical", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "SAE Control Module Voltage"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "44"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
-  "signals": [
-    {"id": "VELOSTER_LAMBDA_CMD", "path": "Engine", "fmt": { "len": 16, "max": 2, "mul": 2, "div": 32768, "unit": "scalar" }, "name": "SAE Lambda Commanded"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "46"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
-  "signals": [
-    {"id": "VELOSTER_AMBIENT_TEMP", "path": "Climate", "fmt": { "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Ambient Air Temp"}
-  ]},
-{ "hdr": "7DF", "rax": "7E8", "cmd": {"01": "67"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
-  "signals": [
-    {"id": "VELOSTER_COOLANT_A", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Coolant Temp A"},
-    {"id": "VELOSTER_COOLANT_B", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "add": -40, "unit": "celsius" }, "name": "SAE Coolant Temp B"}
+    {"id": "VELOSTER_BMS_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                "div": 2,                 "unit": "percent"   }, "name": "State of charge"},
+    {"id": "VELOSTER_BMS_CHG_PWR",    "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "Available charge power"},
+    {"id": "VELOSTER_BMS_DISCHG_PWR", "path": "Battery", "fmt": {"bix": 56,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "Available discharge power"},
+    {"id": "VELOSTER_BMS_MIN_TEMP",   "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery min temp"},
+    {"id": "VELOSTER_BMS_MOD1_TEMP",  "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 1 temp"},
+    {"id": "VELOSTER_BMS_MOD2_TEMP",  "path": "Battery", "fmt": {"bix": 136, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 2 temp"},
+    {"id": "VELOSTER_BMS_MOD3_TEMP",  "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 3 temp"},
+    {"id": "VELOSTER_BMS_MOD4_TEMP",  "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 4 temp"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "21A0"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
   "signals": [
-    {"id": "VELOSTER_ATF_TEMP", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission Fluid Temperature"}
+    {"id": "VELOSTER_ATF_TEMP", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
   "signals": [
-    {"id": "VELOSTER_INTAKE_TEMP", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Intake Air Temperature"},
-    {"id": "VELOSTER_OIL_TEMP",    "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Engine Oil Temperature"}
+    {"id": "VELOSTER_INTAKE_TEMP", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Intake air temperature"},
+    {"id": "VELOSTER_OIL_TEMP",    "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E004"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
   "signals": [
-    {"id": "VELOSTER_AUX_SOC", "path": "Battery", "fmt": {"bix": 320, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux Battery SOC"},
-    {"id": "VELOSTER_AUX_SOH", "path": "Battery", "fmt": {"bix": 328, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux Battery SOH"}
+    {"id": "VELOSTER_AUX_SOC", "path": "Battery", "fmt": {"bix": 320, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery SOC"},
+    {"id": "VELOSTER_AUX_SOH", "path": "Battery", "fmt": {"bix": 328, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery SOH"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 1, "dbgfilter": { "from": 2021, "to": 2019 },
   "signals": [
-    {"id": "VELOSTER_KNOCK_RETARD_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Retard Cyl 1"},
-    {"id": "VELOSTER_KNOCK_RETARD_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Retard Cyl 2"},
-    {"id": "VELOSTER_KNOCK_RETARD_3", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Retard Cyl 3"},
-    {"id": "VELOSTER_KNOCK_RETARD_4", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Retard Cyl 4"},
-    {"id": "VELOSTER_KNOCK_LEARN_1",  "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Learn Cyl 1"},
-    {"id": "VELOSTER_KNOCK_LEARN_2",  "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Learn Cyl 2"},
-    {"id": "VELOSTER_KNOCK_LEARN_3",  "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Learn Cyl 3"},
-    {"id": "VELOSTER_KNOCK_LEARN_4",  "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock Learn Cyl 4"}
+    {"id": "VELOSTER_KNOCK_RETARD_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cyl 1"},
+    {"id": "VELOSTER_KNOCK_RETARD_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cyl 2"},
+    {"id": "VELOSTER_KNOCK_RETARD_3", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cyl 3"},
+    {"id": "VELOSTER_KNOCK_RETARD_4", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cyl 4"},
+    {"id": "VELOSTER_KNOCK_LEARN_1",  "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cyl 1"},
+    {"id": "VELOSTER_KNOCK_LEARN_2",  "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cyl 2"},
+    {"id": "VELOSTER_KNOCK_LEARN_3",  "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cyl 3"},
+    {"id": "VELOSTER_KNOCK_LEARN_4",  "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cyl 4"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": { "from": 2021, "to": 2019 },
   "signals": [
-    {"id": "VELOSTER_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81, "min": -10,             "div": 831.55690902, "add": -12, "unit": "psi"     }, "name": "Turbo Boost Pressure (Gauge)"},
-    {"id": "VELOSTER_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                "mul": 10,  "div": 65535,                    "unit": "volts"   }, "name": "Waste Gate Voltage"},
-    {"id": "VELOSTER_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,               "mul": 200, "div": 65535,                    "unit": "percent" }, "name": "Waste Gate Duty"},
-    {"id": "VELOSTER_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 400,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste Gate Position"},
-    {"id": "VELOSTER_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 100,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste Gate Setpoint"}
+    {"id": "VELOSTER_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81, "min": -10,             "div": 831.55690902, "add": -12, "unit": "psi"     }, "name": "Turbo boost pressure (gauge)"},
+    {"id": "VELOSTER_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                "mul": 10,  "div": 65535,                    "unit": "volts"   }, "name": "Waste gate voltage"},
+    {"id": "VELOSTER_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,               "mul": 200, "div": 65535,                    "unit": "percent" }, "name": "Waste gate duty"},
+    {"id": "VELOSTER_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 400,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate position"},
+    {"id": "VELOSTER_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 100,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate setpoint"}
   ]}
 ]
 }

@@ -1,5 +1,5 @@
 { "commands": [
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 2, "dbgfilter": { "from": 2021, "to": 2019 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 2, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "VELOSTER_DOOR_RL_OPEN",    "path": "Doors",      "fmt": {"bix": 32, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Door rear left open"},
     {"id": "VELOSTER_DOOR_FL_OPEN",    "path": "Doors",      "fmt": {"bix": 34, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Door front left open"},
@@ -11,27 +11,31 @@
     {"id": "VELOSTER_BELT_DRIVER",     "path": "Seatbelts",  "fmt": {"bix": 41, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Seatbelt driver"},
     {"id": "VELOSTER_DEFOG_SW",        "path": "Windshield", "fmt": {"bix": 56, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Defog switch (raw >1)"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 5, "dbgfilter": { "from": 2021, "to": 2019 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "VELOSTER_LOCK_FR",      "path": "Doors",        "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "scalar" }, "name": "Door lock front right (raw)"},
     {"id": "VELOSTER_LOCK_FL",      "path": "Doors",        "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "scalar" }, "name": "Door lock front left (raw)"},
     {"id": "VELOSTER_REVERSE_GEAR", "path": "Transmission", "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Reverse gear selected"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "dbgfilter": { "from": 2021, "to": 2019 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "VELOSTER_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch (raw)"},
     {"id": "VELOSTER_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch (raw >2)"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC07"}, "freq": 1, "dbgfilter": { "from": 2021, "to": 2019 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC07"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "VELOSTER_DEFOG_LIGHT", "path": "Climate", "fmt": {"bix": 40, "len": 8, "max": 1, "unit": "noyes" }, "name": "Defog light on"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC09"}, "freq": 2, "dbgfilter": { "from": 2021, "to": 2019 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC08"}, "freq": 2, "dbgfilter": { "to": 2019, "from": 2021 },
+  "signals": [
+    {"id": "VELOSTER_TURN_L", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Left turn signal on? (raw >1)"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC09"}, "freq": 2, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "VELOSTER_HL_HIGH", "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight high beam on"},
     {"id": "VELOSTER_HL_LOW",  "path": "Lights", "fmt": {"bix": 56, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight low beam on"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "dbg": true, "cmd": {"22": "C00B"}, "freq": 15,
+{ "hdr": "7A0", "rax": "7A8", "cmd": {"22": "C00B"}, "freq": 15, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "VELOSTER_TPMS_PRESS_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,               "unit": "psi"     }, "name": "Tire pressure front left",     "suggestedMetric": "frontLeftTirePressure"},
     {"id": "VELOSTER_TPMS_TEMP_FL",  "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 100, "min": -50,           "sign": true, "unit": "celsius" }, "name": "Tire temperature front left"},
@@ -46,12 +50,36 @@
     {"id": "VELOSTER_TPMS_TEMP_RL",  "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 100, "min": -50,           "sign": true, "unit": "celsius" }, "name": "Tire temperature rear left"},
     {"id": "VELOSTER_TPMS_ALERT_RL", "path": "Tires", "fmt": {"bix": 176, "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "Tire alert rear left"}
   ]},
-{ "hdr": "7C6", "rax": "7CE", "cmd": {"22": "B002"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
+{ "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.5, "dbgfilter": { "to": 2019, "from": 2021 },
+  "signals": [
+    {"id": "VELOSTER_TEMP_INT", "path": "Climate",  "fmt": {"bix": 40,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Interior temperature"},
+    {"id": "VELOSTER_TEMP_EXT", "path": "Climate",  "fmt": {"bix": 48,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Exterior temperature"},
+    {"id": "VELOSTER_VSS",      "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255,                                   "unit": "kilometersPerHour" }, "name": "Vehicle speed",        "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7C6", "rax": "7CE", "cmd": {"22": "B002"}, "freq": 10, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "VELOSTER_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 255,                   "unit": "liters"     }, "name": "Fuel level"},
     {"id": "VELOSTER_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8, "unit": "volts"      }, "name": "Cluster voltage"},
     {"id": "VELOSTER_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,              "unit": "kilometers" }, "name": "Odometer variation 1", "suggestedMetric": "odometer"},
     {"id": "VELOSTER_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,              "unit": "miles"      }, "name": "Odometer variation 2", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7D1", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
+  "signals": [
+    {"id": "VELOSTER_FL_VSS", "path": "Movement", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "VELOSTER_FR_VSS", "path": "Movement", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "VELOSTER_RL_VSS", "path": "Movement", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "VELOSTER_RR_VSS", "path": "Movement", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "7D1", "dbg": true, "cmd": {"22": "0104"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_VSS_AVG",     "path": "Movement", "fmt": {"bix": 48,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Average wheel speed"},
+    {"id": "VELOSTER_TIRE_FL_VSS", "path": "Movement", "fmt": {"bix": 88,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "VELOSTER_TIRE_FR_VSS", "path": "Movement", "fmt": {"bix": 96,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "VELOSTER_TIRE_RR_VSS", "path": "Movement", "fmt": {"bix": 104, "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
+    {"id": "VELOSTER_TIRE_RL_VSS", "path": "Movement", "fmt": {"bix": 112, "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "VELOSTER_TC_SWITCH",   "path": "Movement", "fmt": {"bix": 150, "len": 1,  "max": 1,                                                 "unit": "noyes"             }, "name": "Traction control switch (raw)"},
+    {"id": "VELOSTER_STEER_ANGLE", "path": "Control",  "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering wheel angle"},
+    {"id": "VELOSTER_BRAKE_P",     "path": "Control",  "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake pressure"}
   ]},
 { "hdr": "7D1", "dbg": true, "cmd": {"22": "4000"}, "freq": 1,
   "signals": [
@@ -60,7 +88,11 @@
     {"id": "HYUNDAI_TIRE_RL_VSS_V2", "path": "Movement", "fmt": {"bix": 64, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
     {"id": "HYUNDAI_TIRE_RR_VSS_V2", "path": "Movement", "fmt": {"bix": 72, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
-{ "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
+{ "hdr": "7D4", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
+  "signals": [
+    {"id": "VELOSTER_STEER_ANGLE_V2", "path": "Control", "fmt": {"bix": 72, "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle"}
+  ]},
+{ "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 10, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "VELOSTER_BMS_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                "div": 2,                 "unit": "percent"   }, "name": "State of charge"},
     {"id": "VELOSTER_BMS_CHG_PWR",    "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "Available charge power"},
@@ -71,21 +103,55 @@
     {"id": "VELOSTER_BMS_MOD3_TEMP",  "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 3 temp"},
     {"id": "VELOSTER_BMS_MOD4_TEMP",  "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 4 temp"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "21A0"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
+{ "hdr": "7E0", "dbg": true, "cmd": {"21": "01"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_MIS_1", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1"},
+    {"id": "VELOSTER_MIS_2", "path": "Engine", "fmt": {"bix": 72,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #2"},
+    {"id": "VELOSTER_MIS_3", "path": "Engine", "fmt": {"bix": 88,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3"},
+    {"id": "VELOSTER_MIS_4", "path": "Engine", "fmt": {"bix": 104, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4"}
+  ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"21": "18"}, "freq": 0.25,
+  "signals": [
+    {"id": "VELOSTER_CVVT_T", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 207, "min": -48, "add": -48, "unit": "celsius" }, "name": "Cvvt temperature", "description": "Continuously variable valve timing temperature."}
+  ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"22": "21A0"}, "freq": 10,
+  "signals": [
+    {"id": "VELOSTER_ATF_TEMP_V3", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid temperature"}
+  ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"22": "E021"}, "freq": 0.1,
+  "signals": [
+    {"id": "VELOSTER_TURBO_BOOST_V3", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81, "min": -10,             "div": 831.55690902, "add": -12, "unit": "psi"     }, "name": "Turbo boost pressure (gauge)"},
+    {"id": "VELOSTER_WG_V3",          "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                "mul": 10,  "div": 65535,                    "unit": "volts"   }, "name": "Waste gate voltage"},
+    {"id": "VELOSTER_WG_DUTY_V3",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,               "mul": 200, "div": 65535,                    "unit": "percent" }, "name": "Waste gate duty"},
+    {"id": "VELOSTER_WG_POSITION_V3", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 400,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate position"},
+    {"id": "VELOSTER_WG_SETPOINT_V3", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 100,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate setpoint"}
+  ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"22": "ED02"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_EOT_V2", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 215, "min": -40, "add": -4, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "21A0"}, "freq": 10,
   "signals": [
     {"id": "VELOSTER_ATF_TEMP", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 10, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "VELOSTER_INTAKE_TEMP", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Intake air temperature"},
     {"id": "VELOSTER_OIL_TEMP",    "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E004"}, "freq": 10, "dbgfilter": { "from": 2021, "to": 2019 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
-    {"id": "VELOSTER_AUX_SOC", "path": "Battery", "fmt": {"bix": 320, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery SOC"},
-    {"id": "VELOSTER_AUX_SOH", "path": "Battery", "fmt": {"bix": 328, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery SOH"}
+    {"id": "VELOSTER_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cyl 1"},
+    {"id": "VELOSTER_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cyl 2"},
+    {"id": "VELOSTER_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cyl 3"},
+    {"id": "VELOSTER_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cyl 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 1, "dbgfilter": { "from": 2021, "to": 2019 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E004"}, "freq": 10, "dbgfilter": { "to": 2019, "from": 2021 },
+  "signals": [
+    {"id": "VELOSTER_AUX_SOC", "path": "Battery", "fmt": {"bix": 320, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery soc"},
+    {"id": "VELOSTER_AUX_SOH", "path": "Battery", "fmt": {"bix": 328, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery soh"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
     {"id": "VELOSTER_KNOCK_RETARD_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cyl 1"},
     {"id": "VELOSTER_KNOCK_RETARD_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cyl 2"},
@@ -96,13 +162,47 @@
     {"id": "VELOSTER_KNOCK_LEARN_3",  "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cyl 3"},
     {"id": "VELOSTER_KNOCK_LEARN_4",  "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cyl 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": { "from": 2021, "to": 2019 },
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E021"}, "freq": 0.1,
   "signals": [
     {"id": "VELOSTER_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81, "min": -10,             "div": 831.55690902, "add": -12, "unit": "psi"     }, "name": "Turbo boost pressure (gauge)"},
     {"id": "VELOSTER_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                "mul": 10,  "div": 65535,                    "unit": "volts"   }, "name": "Waste gate voltage"},
     {"id": "VELOSTER_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,               "mul": 200, "div": 65535,                    "unit": "percent" }, "name": "Waste gate duty"},
     {"id": "VELOSTER_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 400,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate position"},
     {"id": "VELOSTER_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 100,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate setpoint"}
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"21": "A0"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_VSS_V3", "path": "Transmission", "fmt": {"bix": 48,  "len": 8, "max": 255,                         "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
+    {"id": "VELOSTER_ATF_T",  "path": "Transmission", "fmt": {"bix": 104, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius"           }, "name": "Automatic transmission fluid temperature"},
+    {"id": "VELOSTER_GEAR", "path": "Transmission", "name": "Current gear", "description": "The automatic transmission gear.", "fmt": {"bix": 152, "len": 8, "map": {
+          "1": { "description": "Neutral", "value": "NEUTRAL" },
+          "2": { "description": "Reverse", "value": "REVERSE" },
+          "3": { "description": "Park",    "value": "PARK" },
+          "4": { "description": "Manual",  "value": "MANUAL" }
+        }}
+    }
+  ]},
+{ "hdr": "7E1", "dbg": true, "cmd": {"22": "01A4"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_GEAR_CUR",   "path": "Transmission", "fmt": {"bix": 188, "len": 4,  "max": 15,                                    "unit": "scalar"  }, "name": "Current gear"},
+    {"id": "VELOSTER_GEAR_NXT",   "path": "Transmission", "fmt": {"bix": 196, "len": 4,  "max": 15,                                    "unit": "scalar"  }, "name": "Next gear"},
+    {"id": "VELOSTER_CLUTCH_1_T", "path": "Transmission", "fmt": {"bix": 232, "len": 16, "max": 300, "min": -40, "mul": 2, "add": -40, "unit": "celsius" }, "name": "Clutch #1 temperature", "description": "Part of the dual clutch transition"},
+    {"id": "VELOSTER_CLUTCH_2_T", "path": "Transmission", "fmt": {"bix": 248, "len": 16, "max": 300, "min": -40, "mul": 2, "add": -40, "unit": "celsius" }, "name": "Clutch #2 temperature", "description": "Part of the dual clutch transition"}
+  ]},
+{ "hdr": "7E2", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
+  "signals": [
+    {"id": "VELOSTER_VSS_V2", "path": "Movement", "fmt": {"bix": 104, "len": 16, "blsb": true, "max": 180, "min": -180, "div": 100, "sign": true, "unit": "milesPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed."}
+  ]},
+{ "hdr": "7E2", "dbg": true, "cmd": {"22": "E004"}, "freq": 1,
+  "signals": [
+    {"id": "VELOSTER_VPWR_V3", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 100, "unit": "percent" }, "name": "12v battery charge"}
+  ]},
+{ "hdr": "7E7", "dbg": true, "cmd": {"22": "C101"}, "freq": 0.25,
+  "signals": [
+    {"id": "VELOSTER_TIRE_FL_SPD", "path": "Movement", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "VELOSTER_TIRE_FR_SPD", "path": "Movement", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "VELOSTER_TIRE_RL_SPD", "path": "Movement", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "VELOSTER_TIRE_RR_SPD", "path": "Movement", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]}
 ]
 }

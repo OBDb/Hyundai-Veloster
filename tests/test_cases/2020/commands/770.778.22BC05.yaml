@@ -5,8 +5,10 @@ test_cases:
     778210000800000AAAA
   expected_values:
     VELOSTER_HAZARD_SW: 0
+    VELOSTER_HL_SW: 0
 - response: |-
     778100B62BC053F1320
     778210050800000AAAA
   expected_values:
-    VELOSTER_HAZARD_SW: 80
+    VELOSTER_HAZARD_SW: 80.0
+    VELOSTER_HL_SW: 0

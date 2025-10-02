@@ -95,3 +95,4 @@ unsupported_commands_by_ecu:
   - 7D1.7D9.220104
   "7E0":
   - 7E0.0162:TQ_ACT
+  - 7E0.7E8.2221A0:VELOSTER_ATF_TEMP

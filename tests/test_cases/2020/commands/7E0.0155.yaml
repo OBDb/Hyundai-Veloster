@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     STSO2FT1: 0
   response: '7E803415580'
+- expected_values:
+    STSO2FT1: 9.375
+  response: 7E80341558C

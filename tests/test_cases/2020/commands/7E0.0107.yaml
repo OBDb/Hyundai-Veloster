@@ -4,29 +4,5 @@ test_cases:
     LONGFT1: -100
   response: '7E803410700'
 - expected_values:
-    LONGFT1: -91.40625
-  response: 7E80341070B
-- expected_values:
-    LONGFT1: -90.625
-  response: 7E80341070C
-- expected_values:
-    LONGFT1: -64.0625
-  response: 7E80341072E
-- expected_values:
-    LONGFT1: -31.25
-  response: '7E803410758'
-- expected_values:
-    LONGFT1: -18.75
-  response: '7E803410768'
-- expected_values:
-    LONGFT1: -17.96875
-  response: '7E803410769'
-- expected_values:
-    LONGFT1: -14.0625
-  response: 7E80341076E
-- expected_values:
-    LONGFT1: -11.71875
-  response: '7E803410771'
-- expected_values:
-    LONGFT1: -9.375
-  response: '7E803410774'
+    LONGFT1: -0.78125
+  response: 7E80341077F

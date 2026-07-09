@@ -1,8 +1,0 @@
-command_id: 770.778.22BC09
-test_cases:
-- expected_values:
-    VELOSTER_HL_HIGH: 0
-    VELOSTER_HL_LOW: 0
-  response: |-
-    778100B62BC09300000
-    778210000000000AAAA

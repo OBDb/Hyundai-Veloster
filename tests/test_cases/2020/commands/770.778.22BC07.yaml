@@ -1,0 +1,12 @@
+command_id: 770.778.22BC07
+test_cases:
+- expected_values:
+    VELOSTER_DEFOG_LIGHT: 1
+  response: |-
+    778100B62BC0708480B
+    778210000101000AAAA
+- expected_values:
+    VELOSTER_DEFOG_LIGHT: 1
+  response: |-
+    778100B62BC0708480B
+    778210010101000AAAA

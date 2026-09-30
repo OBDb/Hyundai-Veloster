@@ -4,21 +4,25 @@
   "commands": [
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 2, "dbgfilter": { "to": 2018, "from": 2022 },
   "signals": [
-    {"id": "VELOSTER_DOOR_RL_OPEN",    "path": "Doors",      "fmt": {"bix": 32, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Door rear left open"},
-    {"id": "VELOSTER_DOOR_FL_OPEN",    "path": "Doors",      "fmt": {"bix": 34, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Door front left open"},
-    {"id": "VELOSTER_HANDBRAKE",       "path": "Control",    "fmt": {"bix": 35, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Handbrake switch"},
-    {"id": "VELOSTER_DOOR_FR_OPEN",    "path": "Doors",      "fmt": {"bix": 36, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Door front right open"},
-    {"id": "VELOSTER_DOOR_RR_OPEN",    "path": "Doors",      "fmt": {"bix": 37, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Door rear right open"},
-    {"id": "VELOSTER_DOOR_TRUNK_OPEN", "path": "Doors",      "fmt": {"bix": 39, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Door trunk open"},
-    {"id": "VELOSTER_BELT_PASSENGER",  "path": "Seatbelts",  "fmt": {"bix": 40, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Seatbelt passenger"},
-    {"id": "VELOSTER_BELT_DRIVER",     "path": "Seatbelts",  "fmt": {"bix": 41, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Seatbelt driver"},
-    {"id": "VELOSTER_DEFOG_SW",        "path": "Windshield", "fmt": {"bix": 56, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Defog switch (raw >1)"}
+    {"id": "VELOSTER_TRUNK",          "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1, "unit": "noyes" }, "name": "Trunk open?"},
+    {"id": "VELOSTER_DOOR_FL",        "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front left door open?"},
+    {"id": "VELOSTER_DOOR_FR",        "path": "Doors",     "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front right door open?"},
+    {"id": "VELOSTER_HANDBRAKE",      "path": "Control",   "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "noyes" }, "name": "Handbrake engaged?"},
+    {"id": "VELOSTER_DOOR_RR",        "path": "Doors",     "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear right door open?"},
+    {"id": "VELOSTER_DOOR_RL",        "path": "Doors",     "fmt": {"bix": 39, "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear left door open?"},
+    {"id": "VELOSTER_BELT_PASSENGER", "path": "Seatbelts", "fmt": {"bix": 45, "len": 1, "max": 1, "unit": "noyes" }, "name": "Passenger seatbelt latched?"},
+    {"id": "VELOSTER_BELT_DRIVER",    "path": "Seatbelts", "fmt": {"bix": 46, "len": 1, "max": 1, "unit": "noyes" }, "name": "Driver seatbelt latched?"},
+    {"id": "VELOSTER_HOOD",           "path": "Doors",     "fmt": {"bix": 47, "len": 1, "max": 1, "unit": "noyes" }, "name": "Hood latched?"},
+    {"id": "VELOSTER_DEFOG_SW",       "path": "Climate",   "fmt": {"bix": 62, "len": 1, "max": 1, "unit": "noyes" }, "name": "Defogging?"}
   ]},
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 5, "dbgfilter": { "to": 2018, "from": 2022 },
   "signals": [
-    {"id": "VELOSTER_LOCK_FR",      "path": "Doors",        "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "scalar" }, "name": "Door lock front right (raw)"},
-    {"id": "VELOSTER_LOCK_FL",      "path": "Doors",        "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "scalar" }, "name": "Door lock front left (raw)"},
-    {"id": "VELOSTER_REVERSE_GEAR", "path": "Transmission", "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Reverse gear selected"}
+    {"id": "VELOSTER_REVERSE_GEAR", "path": "Transmission", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Reverse gear selected"},
+    {"id": "VELOSTER_LOCK_FL",      "path": "Doors",        "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front left door locked?"},
+    {"id": "VELOSTER_LOCK_FR",      "path": "Doors",        "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front right door locked?"},
+    {"id": "VELOSTER_BELT_RM",      "path": "Seatbelts",    "fmt": {"bix": 52, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear middle seatbelt latched?"},
+    {"id": "VELOSTER_BELT_RL",      "path": "Seatbelts",    "fmt": {"bix": 53, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear left seatbelt latched?"},
+    {"id": "VELOSTER_BELT_RR",      "path": "Seatbelts",    "fmt": {"bix": 54, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear right seatbelt latched?"}
   ]},
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2022 },
   "signals": [
@@ -51,28 +55,17 @@
   ]},
 { "hdr": "7C6", "rax": "7CE", "cmd": {"22": "B002"}, "freq": 10, "dbgfilter": { "to": 2018, "from": 2022 },
   "signals": [
-    {"id": "VELOSTER_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 255,                   "unit": "liters"     }, "name": "Fuel level"},
-    {"id": "VELOSTER_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8, "unit": "volts"      }, "name": "Cluster voltage"},
-    {"id": "VELOSTER_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,              "unit": "kilometers" }, "name": "Odometer variation 1", "suggestedMetric": "odometer"},
-    {"id": "VELOSTER_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,              "unit": "miles"      }, "name": "Odometer variation 2", "suggestedMetric": "odometer"}
+    {"id": "VELOSTER_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 127.5,    "div": 2,    "nullmax": 127.5, "unit": "liters"     }, "name": "Fuel level",           "suggestedMetric": "fuelTankLevel"},
+    {"id": "VELOSTER_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8,                   "unit": "volts"      }, "name": "Cluster voltage"},
+    {"id": "VELOSTER_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,                                "unit": "kilometers" }, "name": "Odometer variation 1", "suggestedMetric": "odometer"},
+    {"id": "VELOSTER_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,                                "unit": "miles"      }, "name": "Odometer variation 2", "suggestedMetric": "odometer"}
   ]},
 { "hdr": "7D1", "rax": "7D9", "cmd": {"22": "4000"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2022 },
   "signals": [
-    {"id": "HYUNDAI_TIRE_FL_VSS_V2", "path": "Movement", "fmt": {"bix": 48, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
-    {"id": "HYUNDAI_TIRE_FR_VSS_V2", "path": "Movement", "fmt": {"bix": 56, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
-    {"id": "HYUNDAI_TIRE_RL_VSS_V2", "path": "Movement", "fmt": {"bix": 64, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
-    {"id": "HYUNDAI_TIRE_RR_VSS_V2", "path": "Movement", "fmt": {"bix": 72, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
-  ]},
-{ "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 10, "dbgfilter": { "to": 2018, "from": 2022 },
-  "signals": [
-    {"id": "VELOSTER_BMS_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                "div": 2,                 "unit": "percent"   }, "name": "State of charge"},
-    {"id": "VELOSTER_BMS_CHG_PWR",    "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "Available charge power"},
-    {"id": "VELOSTER_BMS_DISCHG_PWR", "path": "Battery", "fmt": {"bix": 56,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "Available discharge power"},
-    {"id": "VELOSTER_BMS_MIN_TEMP",   "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery min temp"},
-    {"id": "VELOSTER_BMS_MOD1_TEMP",  "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 1 temp"},
-    {"id": "VELOSTER_BMS_MOD2_TEMP",  "path": "Battery", "fmt": {"bix": 136, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 2 temp"},
-    {"id": "VELOSTER_BMS_MOD3_TEMP",  "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 3 temp"},
-    {"id": "VELOSTER_BMS_MOD4_TEMP",  "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 4 temp"}
+    {"id": "HYUNDAI_TIRE_FL_VSS_V2", "path": "Movement", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "HYUNDAI_TIRE_FR_VSS_V2", "path": "Movement", "fmt": {"bix": 56, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "HYUNDAI_TIRE_RL_VSS_V2", "path": "Movement", "fmt": {"bix": 64, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "HYUNDAI_TIRE_RR_VSS_V2", "path": "Movement", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "21A0"}, "freq": 10,
   "signals": [

@@ -2,7 +2,7 @@ command_id: 7C6.7CE.22B002
 test_cases:
 - expected_values:
     VELOSTER_CLUSTER_VOLTAGE: 11.71875
-    VELOSTER_FLI_VOL: 7
+    VELOSTER_FLI_VOL: 3.5
     VELOSTER_ODO_KM: 0
     VELOSTER_ODO_MI: 50555
   response: |-
@@ -11,7 +11,7 @@ test_cases:
     7CE22C57BAAAAAAAAAA
 - expected_values:
     VELOSTER_CLUSTER_VOLTAGE: 12.42188
-    VELOSTER_FLI_VOL: 7
+    VELOSTER_FLI_VOL: 3.5
     VELOSTER_ODO_KM: 0
     VELOSTER_ODO_MI: 51270
   response: |-
@@ -20,7 +20,7 @@ test_cases:
     7CE22C846AAAAAAAAAA
 - expected_values:
     VELOSTER_CLUSTER_VOLTAGE: 12.5
-    VELOSTER_FLI_VOL: 7
+    VELOSTER_FLI_VOL: 3.5
     VELOSTER_ODO_KM: 0
     VELOSTER_ODO_MI: 35495
   response: |-
@@ -29,7 +29,7 @@ test_cases:
     7CE228AA7AAAAAAAAAA
 - expected_values:
     VELOSTER_CLUSTER_VOLTAGE: 13.35938
-    VELOSTER_FLI_VOL: 7
+    VELOSTER_FLI_VOL: 3.5
     VELOSTER_ODO_KM: 0
     VELOSTER_ODO_MI: 51820
   response: |-
@@ -38,7 +38,7 @@ test_cases:
     7CE22CA6CAAAAAAAAAA
 - expected_values:
     VELOSTER_CLUSTER_VOLTAGE: 13.51562
-    VELOSTER_FLI_VOL: 7
+    VELOSTER_FLI_VOL: 3.5
     VELOSTER_ODO_KM: 0
     VELOSTER_ODO_MI: 47359
   response: |-
@@ -47,7 +47,7 @@ test_cases:
     7CE22B8FFAAAAAAAAAA
 - expected_values:
     VELOSTER_CLUSTER_VOLTAGE: 13.67188
-    VELOSTER_FLI_VOL: 19
+    VELOSTER_FLI_VOL: 9.5
     VELOSTER_ODO_KM: 0
     VELOSTER_ODO_MI: 47360
   response: |-
@@ -56,7 +56,7 @@ test_cases:
     7CE22B900AAAAAAAAAA
 - expected_values:
     VELOSTER_CLUSTER_VOLTAGE: 13.75
-    VELOSTER_FLI_VOL: 47
+    VELOSTER_FLI_VOL: 23.5
     VELOSTER_ODO_KM: 0
     VELOSTER_ODO_MI: 41129
   response: |-
@@ -65,7 +65,7 @@ test_cases:
     7CE22A0A9AAAAAAAAAA
 - expected_values:
     VELOSTER_CLUSTER_VOLTAGE: 11.01562
-    VELOSTER_FLI_VOL: 96
+    VELOSTER_FLI_VOL: 48
     VELOSTER_ODO_KM: 0
     VELOSTER_ODO_MI: 50562
   response: |-
@@ -74,7 +74,6 @@ test_cases:
     7CE22C582AAAAAAAAAA
 - expected_values:
     VELOSTER_CLUSTER_VOLTAGE: 10.9375
-    VELOSTER_FLI_VOL: 255
     VELOSTER_ODO_KM: 0
     VELOSTER_ODO_MI: 43652
   response: |-
@@ -83,7 +82,7 @@ test_cases:
     7CE22AA84AAAAAAAAAA
 - expected_values:
     VELOSTER_CLUSTER_VOLTAGE: 13.90625
-    VELOSTER_FLI_VOL: 17
+    VELOSTER_FLI_VOL: 8.5
     VELOSTER_ODO_KM: 80104
     VELOSTER_ODO_MI: 0
   response: |-

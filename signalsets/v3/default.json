@@ -13,21 +13,6 @@
     {"id": "VELOSTER_LONGITUDINAL_ACCELERATION", "path": "Orientation", "fmt": {"bix": 128, "len": 16, "blsb": true, "max": 4.1769, "min": -4.1769, "mul": 8.354, "div": 65535, "add": -4.177,                                 "unit": "metersPerSecondSquared" },                  "name": "Longitudinal acceleration"},
     {"id": "VELOSTER_YAW_RATE",                  "path": "Orientation", "fmt": {"bix": 144, "len": 8,  "max": 1.275,                                "div": 200,                                              "unit": "degrees" },                               "name": "Yaw rate"}
   ]},
-{ "hdr": "740", "rax": "748", "dbg": true, "cmd": {"22": "01A1"}, "freq": 0.25,
-  "signals": [
-    {"id": "VELOSTER_AWD_CALC_CMD_TQ",    "path": "Engine", "fmt": {"bix": 40,  "len": 16, "max": 4095.875, "min": -4096,                  "div": 8,     "sign": true, "unit": "newtonMeters" }, "name": "4WD calculated, commanded torque"},
-    {"id": "VELOSTER_AWD_PMP_PWM_DUTY",   "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 100,      "min": -3276.8,                "div": 10,    "sign": true, "unit": "percent"      }, "name": "4WD pump PWM duty"},
-    {"id": "VELOSTER_AWD_MAX_CLU_STRESS", "path": "Engine", "fmt": {"bix": 88,  "len": 16, "max": 100,                      "mul": 19.531, "div": 10000,               "unit": "percent"      }, "name": "4WD max clutch stress"},
-    {"id": "VELOSTER_AWD_PMP_CURRENT",    "path": "Engine", "fmt": {"bix": 112, "len": 16, "max": 255,      "min": -256,    "mul": 78.125, "div": 10000, "sign": true, "unit": "amps"         }, "name": "4WD pump current"},
-    {"id": "VELOSTER_AWD_CLU_ACT_TQ",     "path": "Engine", "fmt": {"bix": 128, "len": 16, "max": 4095.875, "min": -4096,                  "div": 8,     "sign": true, "unit": "newtonMeters" }, "name": "4WD clutch, actual torque"},
-    {"id": "VELOSTER_AWD_CLU_ACT_P",      "path": "Engine", "fmt": {"bix": 144, "len": 16, "max": 63.99,    "min": -63.99,  "mul": 19.53,  "div": 10000, "sign": true, "unit": "bars"         }, "name": "4WD clutch, actual pressure"}
-  ]},
-{ "hdr": "740", "rax": "748", "dbg": true, "cmd": {"22": "01A3"}, "freq": 0.25,
-  "signals": [
-    {"id": "VELOSTER_AWD_CALC_CLU_POWER", "path": "Engine",   "fmt": {"bix": 56,  "len": 16, "max": 255,                   "mul": 39.062, "div": 10000,                         "unit": "kilowattHours" },             "name": "4WD calculated clutch power"},
-    {"id": "VELOSTER_AWD_CALC_ENG_POWER", "path": "Engine",   "fmt": {"bix": 72,  "len": 16, "max": 64,                    "mul": 9.766,  "div": 10000,                         "unit": "kilowattHours" },             "name": "4WD calculated engine power"},
-    {"id": "VELOSTER_AWD_RPM",            "path": "Movement", "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 16383.5, "min": -16384,               "div": 2, "sign": true,                         "unit": "bars" },                                     "name": "4WD engine RPM"}
-  ]},
 { "hdr": "744", "rax": "74C", "fcm1": true, "dbg": true, "cmd": {"22": "E001"}, "freq": 1,
   "signals": [
     {"id": "VELOSTER_AUX_BATTERY_VOLTAGE",  "path": "Battery.Charging", "fmt": {"bix": 88,  "len": 16, "max": 655.35,                        "div": 100,             "unit": "volts" }, "name": "Auxiliary battery voltage"},
@@ -510,10 +495,10 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
-    {"id": "VELOSTER_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53.6864, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 1"},
-    {"id": "VELOSTER_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53.6864, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 2"},
-    {"id": "VELOSTER_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53.6864, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 3"},
-    {"id": "VELOSTER_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53.6864, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 4"}
+    {"id": "VELOSTER_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53.6864, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 1"},
+    {"id": "VELOSTER_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53.6864, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 2"},
+    {"id": "VELOSTER_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53.6864, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 3"},
+    {"id": "VELOSTER_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53.6864, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 4"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E003"}, "freq": 1,
   "signals": [

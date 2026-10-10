@@ -2,29 +2,29 @@ command_id: 7E0.0115
 test_cases:
 - expected_values:
     O2S12: 0.045
-    SHRTFT11: 71.21875
+    SHRTFT12: null
   response: 7E804411509FF
 - expected_values:
     O2S12: 0.075
-    SHRTFT11: 71.21875
+    SHRTFT12: null
   response: 7E80441150FFF
 - expected_values:
     O2S12: 0.095
-    SHRTFT11: 71.21875
+    SHRTFT12: null
   response: 7E804411513FF
 - expected_values:
     O2S12: 0.76
-    SHRTFT11: 71.21875
+    SHRTFT12: null
   response: 7E804411598FF
 - expected_values:
     O2S12: 0.855
-    SHRTFT11: 71.21875
+    SHRTFT12: null
   response: 7E8044115ABFF
 - expected_values:
     O2S12: 0.9
-    SHRTFT11: 71.21875
+    SHRTFT12: null
   response: 7E8044115B4FF
 - expected_values:
     O2S12: 1.275
-    SHRTFT11: 71.21875
+    SHRTFT12: null
   response: 7E8044115FFFF

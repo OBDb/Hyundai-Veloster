@@ -107,7 +107,7 @@
   "signals": [
     {"id": "VELOSTER_DEFOG_LIGHT", "path": "Climate", "fmt": {"bix": 40, "len": 8, "max": 1, "unit": "noyes" }, "name": "Defog light on"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC08"}, "freq": 2, "dbgfilter": { "to": 2019, "from": 2021 },
+{ "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC08"}, "freq": 2,
   "signals": [
     {"id": "VELOSTER_TURN_L", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Left turn signal on?, raw >1"}
   ]},
